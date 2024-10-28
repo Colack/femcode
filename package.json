@@ -1,0 +1,25 @@
+{
+  "name": "femcode",
+  "version": "0.0.1",
+  "description": "A programming language for femboys",
+  "scripts": {
+    "rimraf": "rimraf ./dist",
+    "prettier": "prettier --write ./src/**/*.ts",
+    "tsc-build": "npx tsc --outDir ./dist",
+    "build": "npm run rimraf && npm run tsc-build",
+    "start": "node ./dist/femcode.js"
+  },
+  "author": "colack",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "@types/chalk": "^0.4.31",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
+}
